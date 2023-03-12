@@ -1,0 +1,68 @@
+
+.search_input {
+  margin-right: 10px;
+  display: inline-block;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  color: #555555;
+  transition: box-shadow 0.3s ease;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.search_input:focus {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  outline: none;
+}
+
+
+.agregar_button {
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 20px;
+    font-family: 'Unkempt', cursive;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, #ff00ff, #00ffff); /* Agregar un gradiente */
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 5px #999;
+    margin-left: 10px;
+    margin-top: 2px;
+    margin-right: 10px;
+    animation: pulse 1.5s ease-in-out infinite; /* Agregar una animación de pulsación */
+  }
+  
+  .agregar_button:hover {
+    background: linear-gradient(to right, #ff00ff, #ff1493); /* Cambiar el gradiente en hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    animation: none;
+      }
+  
+  .agregar_button:active {
+    background: linear-gradient(to right, #00ffff, #00ff7f); /* Cambiar el gradiente en active */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+    transform: translateY(2px);
+    animation: none; /* Detener la animación de pulsación en active */
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @media (max-width: 768px) {
+    .search_bar {
+      height: auto;
+    }}

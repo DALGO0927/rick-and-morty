@@ -1,0 +1,11 @@
+.container {
+    background-image:('/front/src/assets/2ejm.gif');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .text_color {
+    color: white;
+    font-size: 100px;
+  }
+  
